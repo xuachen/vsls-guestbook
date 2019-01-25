@@ -20,7 +20,8 @@ for (let x = 0; x < COLUMNS; x++) {
     const isSpecial = isSpecialCell(cellNumber);
 
     const signature = signatures.unshift();
-    matrix.push({ isBonus, isSpecial, signature });
+    const matrixCell = new MatrixCell(isBonus, isSpecial, signature);
+    matrix.push(matrixCell);
   }
 }
 
