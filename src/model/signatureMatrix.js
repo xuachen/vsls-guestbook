@@ -4,7 +4,7 @@ import { signatures } from "./signatures";
 const COLUMNS = 30;
 const ROWS = 20;
 
-class MatrixCell {
+export class MatrixCell {
   constructor(isBonus, isSpecial, signature) {
     this.isBonus = isBonus;
     this.isSpecial = isSpecial;
