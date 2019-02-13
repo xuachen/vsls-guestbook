@@ -1,6 +1,6 @@
 trigger:
   branches:
-    include: ["master"]
+    include: ["master", "*"]
 
 queue:
   name: Hosted VS2017
