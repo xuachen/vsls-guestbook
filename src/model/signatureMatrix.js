@@ -19,6 +19,7 @@ for (let x = 0; x < COLUMNS; x++) {
     const isBonus = isBonusCell(cellNumber);
     const isSpecial = isSpecialCell(cellNumber);
 
+    // Adding some comments here
     const signature = signatures.unshift();
     const matrixCell = new MatrixCell(isBonus, isSpecial, signature);
     matrix.push(matrixCell);
