@@ -1,0 +1,19 @@
+queue:
+  name: Hosted VS2017
+
+steps:
+- task: NodeTool@0
+  inputs:
+    versionSpec: '8.x'
+
+- script: yarn
+  displayName: Install dependencies
+
+- task: MS-RichCodeNav.Indexer.build-task.RichCodeNavIndexer@0
+  displayName: 'Rich Code Navigation Indexer'
+  inputs:
+    serviceConnection: 'RichNav connection'
+    nugetServiceConnection: 'RichNav nuget connection'
+    githubServiceConnection: 'GitHub connection 1'
+    languages: typescript
+    serviceEndpoint: 'https://int.richnav.vsengsaas.visualstudio.com'
