@@ -1,8 +1,10 @@
 import Emoji from "./Emoji";
 import React from "react";
-import Subheading from "./Subheading";
-import TwitterButton from "./TwitterButton";
 
+// To check: go to definition on Subheading to find the font-size
+import { Subheading } from "./Subheading";
+
+import TwitterButton from "./TwitterButton";
 import styled from "styled-components";
 
 export default function Header() {
@@ -10,7 +12,7 @@ export default function Header() {
         <Container>
             <div>
                 <Heading>Visual Studio Live Share Guestbook</Heading>
-                <Subheading>Be a part of collaborative development history at //Build 2018! <Emoji type="rocket" /></Subheading>
+                <Subheading>Be a part of collaborative development history at //Discover Day 2019 <Emoji type="rocket" /></Subheading>
             </div>
             <TwitterButton hashTag="vsliveshare" />
         </Container>
