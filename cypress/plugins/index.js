@@ -5,7 +5,7 @@
 // the plugins file with the 'pluginsFile' configuration option.
 //
 // You can read more here:
-// https://on.cypress.io/plugins-guide
+// https://on.cypress.io/plugins-guide...
 // ***********************************************************
 
 // This function is called when a project is opened or re-opened (e.g. due to
