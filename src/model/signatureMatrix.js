@@ -14,10 +14,12 @@ for (let x = 0; x < COLUMNS; x++) {
     const isBonus = isBonusCell(cellNumber);
     const isSpecial = isSpecialCell(cellNumber);
 
-    const signature = signatures.unshift();
+    // Adding comments
+    const signature = signatures.shift();
     const matrixCell = new MatrixCell(isBonus, isSpecial, signature);
     matrix.push(matrixCell);
   }
 }
 
+// An external reference
 export default observable(matrix);

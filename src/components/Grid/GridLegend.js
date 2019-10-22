@@ -3,7 +3,7 @@ import React from "react";
 
 import styled from "styled-components";
 
-// To check: Where is GridLegend used?
+// To check: Where is GridLegend used??
 export function GridLegend({ bonusLabel = "Bonus"}) {
     return (
         <Container>
