@@ -21,4 +21,5 @@ for (let x = 0; x < COLUMNS; x++) {
   }
 }
 
-export default matrix;
+// external reference
+export default observable(matrix);
